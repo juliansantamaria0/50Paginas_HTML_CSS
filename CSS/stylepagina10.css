@@ -1,0 +1,90 @@
+body {
+  background: #1a1a1a;
+  color: #111;
+  font-family: 'Inter', sans-serif;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px 10%;
+  gap: 40px;
+}
+
+.content {
+  flex: 1;
+  font-size: 0.95rem;
+  color: #5a5959;
+  line-height: 1.6;
+}
+
+.logo-circle {
+  width: 60px;
+  height: 60px;
+  border: 1px solid #000;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+p {
+  margin-bottom: 30px;
+}
+
+.buttons {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 40px;
+}
+
+.btn {
+  padding: 12px 25px;
+  border-radius: 8px;
+  border: none;
+  font-size: 1rem;
+}
+
+.btn.primary {
+  background: #ffffff;
+  color: #000000;
+}
+
+.image-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.image-container img {
+  width: 100%;
+  max-width: 380px;
+  border-radius: 20px;
+}
+.gradient1 { 
+  background: linear-gradient(45deg, #ff6b6b, #ff8e8e);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.gradient2 { 
+  background: linear-gradient(45deg, #45b7d1, #6bc5e0);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.gradient3 { 
+  background: linear-gradient(45deg, #4ecdc4, #6ee5dd);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  }
