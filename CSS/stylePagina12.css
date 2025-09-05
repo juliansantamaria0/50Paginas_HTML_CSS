@@ -1,0 +1,73 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f5f5f5;
+  color: #333;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.decor {
+  width: 400px;
+  position: relative;
+  z-index: 1;
+}
+
+
+.main-img {
+  width: 260px;
+  position: absolute;
+  right: 120px;
+  top: 100px;
+  z-index: 2;
+}
+
+
+.card {
+  width: 140px;
+  position: absolute;
+  right: 80px;
+  bottom: 100px;
+  z-index: 3;
+}
+
+
+.text {
+  position: absolute;
+  left: 120px;
+  top: 120px;
+  max-width: 320px;
+  z-index: 4;
+}
+
+.text h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.text p {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+.btn {
+  background: #333;
+  color: white;
+  padding: 12px 28px;
+  border: none;
+  border-radius: 25px;
+  font-size: 1rem;
+}
