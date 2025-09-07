@@ -1,90 +1,94 @@
-
 body {
+  background: #bfc6c8;
+  color: #333;
+  line-height: 1.5;
+  font-family: Arial, sans-serif;
   margin: 0;
-  font-family: 'Inter', sans-serif;
-  background: linear-gradient(180deg, #cfd4d6, #9ca7aa);
-  color: #2e2d2a;
+  padding: 0;
 }
+
 
 .hero {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  padding: 60px 8%;
-  flex-wrap: wrap;
+  padding: 80px 8%;
   gap: 40px;
 }
 
-.content {
-  flex: 1;
-  min-width: 300px;
+.hero-text {
+  max-width: 600px;
 }
 
-.content h1 {
-  font-size: 3rem;
-  font-weight: 700;
+.hero-text h1 {
+  font-size: 56px;
+  font-weight: bold;
   margin-bottom: 20px;
 }
 
-.content p {
-  font-size: 1.1rem;
-  color: #5b5d5a;
-  margin-bottom: 30px;
+.hero-text p {
+  font-size: 18px; 
+  color: #444;
+  margin-bottom: 35px;
   line-height: 1.6;
+  max-width: 520px; 
 }
-
 
 .btn {
-  background: #2e2d24;
+  display: inline-block;
+  background: #1a1a1a;
   color: #fff;
-  padding: 12px 28px;
+  padding: 12px 32px; 
+  border-radius: 50px; 
   border: none;
-  border-radius: 30px;
-  font-size: 1rem;
-
+  font-weight: bold;
+  font-size: 16px; 
+  text-decoration: none;
 }
 
-
-
-.images {
-  flex: 1;
-  display: flex;
-  justify-content:left;
-  gap: 20px;
-}
-
-.images img {
-  width: 100%;
-  max-width: 260px;
-  border-radius: 15px;
+.images .img2 {
+  max-width: 740px; 
   object-fit: cover;
 }
 
 
+.image-left .img1 {
+  max-width: 400px;
+  object-fit: cover;
+  margin-left: 8%;
+  margin-top: 40px;
+}
+
+
 .stats-box {
-  background: #bfc6c8;
-  margin: 50px auto;
-  padding: 30px 40px;
-  border-radius: 30px;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 40px;
+  backdrop-filter: blur(10px);
+  padding: 40px 60px;
   display: flex;
-  justify-content: center;
-  gap: 30px;
-  max-width: 1000px;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 60px;
+  max-width: 500px;
+  margin: -357px auto 700px auto;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    transform: translateX(160px);
 }
 
 .stat {
-  text-align: center;
   flex: 1;
+  text-align: left;
 }
 
 .stat h2 {
-  font-size: 1.8rem;
-  font-weight: 700;
-  margin-bottom: 10px;
+  font-size: 28px; 
+  font-weight: bold;
+  margin-bottom: 15px;
 }
 
 .stat p {
-  font-size: 0.95rem;
+  font-size: 15px; 
   color: #333;
-  line-height: 1.4;
+  line-height: 1.6;
 }
+

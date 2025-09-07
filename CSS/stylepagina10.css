@@ -71,19 +71,19 @@ p {
   border-radius: 20px;
 }
 .gradient1 { 
-  background: linear-gradient(45deg, #ff6b6b, #ff8e8e);
+  background: #FEC3C7;
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 .gradient2 { 
-  background: linear-gradient(45deg, #45b7d1, #6bc5e0);
+  background: #9AD7F3;
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 .gradient3 { 
-  background: linear-gradient(45deg, #4ecdc4, #6ee5dd);
+  background: #6BDFDA;
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;

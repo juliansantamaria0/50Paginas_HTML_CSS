@@ -36,7 +36,7 @@ body {
 
 
 .btn {
-  background: #ead33e;
+  background: #FFDE81;
   color: #000000;
   padding: 12px 28px;
   border: none;
@@ -63,14 +63,15 @@ body {
 
 
 .stats-box {
-  background: #0f0004bf;
+  background: #49342F;
   margin: 50px auto;
   padding: 10px 20px;
   border-radius: 30px;
   display: flex;
-  justify-content:space-between;
+  justify-content: space-around;
   gap: 30px;
   max-width: 600px;
+  
 }
 
 .stat {

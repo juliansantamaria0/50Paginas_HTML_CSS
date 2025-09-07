@@ -1,6 +1,6 @@
 
 body {
-  background-color: #a82602;
+  background-color: #9C2004;
   color: #fffbfb;
   display: flex;
   justify-content: center;
@@ -54,7 +54,7 @@ body {
 }
 
 .right button {
-  background: #d3df23;
+  background: #E5B94B;
   color: #000000;
   padding: 10px 25px;
   border: none;

@@ -25,20 +25,20 @@ body {
 
 
 .main-img {
-  width: 260px;
+  width: 460px;
   position: absolute;
-  right: 120px;
+  right: 220px;
   top: 100px;
   z-index: 2;
 }
 
 
 .card {
-  width: 140px;
+  width: 240px;
   position: absolute;
-  right: 80px;
+  right: 200px;
   bottom: 100px;
-  z-index: 3;
+  z-index: 1;
 }
 
 
