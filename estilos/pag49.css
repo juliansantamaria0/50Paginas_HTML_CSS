@@ -1,0 +1,87 @@
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #FFD66B; 
+      color: #111;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .hero {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 60px 8%;
+      width: 100%;
+      max-width: 1300px;
+      flex-wrap: wrap;
+    }
+
+    /* ---- Texto izquierda ---- */
+    .hero-text {
+      flex: 1;
+      min-width: 300px;
+    }
+
+    .hero-text h1 {
+      font-size: 3rem;
+      line-height: 1.2;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    .hero-text p {
+      font-size: 1rem;
+      line-height: 1.6;
+      margin-bottom: 20px;
+      max-width: 400px;
+    }
+
+    .hero-text button {
+      padding: 12px 30px;
+      font-size: 1rem;
+      border: none;
+      border-radius: 25px;
+      background: black;
+      color: white;
+      cursor: pointer;
+    }
+
+    /* ---- Imagen derecha ---- */
+    .hero-image {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-width: 300px;
+    }
+
+    .hero-image img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 0;
+    }
+
+    /* Responsivo */
+    @media (max-width: 900px) {
+      .hero {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .hero-text h1 {
+        font-size: 2.2rem;
+      }
+
+      .hero-text p {
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
