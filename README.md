@@ -225,4 +225,5 @@ Proporcionar ejemplos prácticos y referencias visuales para desarrolladores que
 - [Smashing Magazine](https://www.smashingmagazine.com/) - Artículos de diseño web
 - [A List Apart](https://alistapart.com/) - Estándares web
 
-```
+### netlify
+https://resilient-begonia-b41c44.netlify.app/
