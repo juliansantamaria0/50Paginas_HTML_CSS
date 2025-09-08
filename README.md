@@ -4,7 +4,7 @@ Julian Santamaria
 Kevin Pico
 
 
-# 🌐 50 Páginas HTML & CSS
+# 🌐 30 Páginas HTML & CSS
 
 Una colección completa de **30 páginas web estáticas** que demuestran técnicas avanzadas de maquetación y diseño web moderno. Este proyecto incluye las páginas 1-15 y 40-55, cada una con su propio diseño único.
 
