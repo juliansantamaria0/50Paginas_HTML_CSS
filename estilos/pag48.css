@@ -1,0 +1,131 @@
+ * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #fdd03d; 
+      line-height: 1.6;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    .hero {
+      flex: 1;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      padding: 60px 10%;
+      gap: 40px;
+      flex-wrap: wrap;
+      position: relative;
+      z-index: 2;
+    }
+
+    /* ---- Texto izquierda ---- */
+    .hero-text {
+      flex: 1;
+      min-width: 300px;
+      z-index: 2;
+    }
+
+    .hero-text h1 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+    }
+
+    .highlight {
+      display: inline-block;
+      background: #fff;
+      color: #111;
+      font-weight: bold;
+      padding: 5px 20px;
+      border-radius: 40px;
+      font-size: 2rem;
+      box-shadow: 5px 5px 0px #111;
+      margin: 15px 0;
+    }
+
+    .hero-text button {
+      margin-top: 20px;
+      padding: 12px 30px;
+      font-size: 1rem;
+      border: none;
+      border-radius: 25px;
+      background: black;
+      color: white;
+      cursor: pointer;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    /* ---- Derecha ---- */
+    .hero-info {
+      flex: 1;
+      min-width: 300px;
+      z-index: 2;
+    }
+
+    .item {
+      display: flex;
+      align-items: flex-start;
+      margin-bottom: 20px;
+      gap: 15px;
+    }
+
+    .item-number {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #111;
+      min-width: 40px;
+    }
+
+    .item p {
+      font-size: 0.95rem;
+      color: #333;
+    }
+
+    /* ---- Números grandes ---- */
+    .stats {
+      display: flex;
+      gap: 30px;
+      margin-top: 30px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .stat {
+      background: transparent;
+      border: 2px solid #111;
+      border-radius: 30px;
+      padding: 10px 20px;
+      font-weight: bold;
+      font-size: 1.2rem;
+      box-shadow: 4px 4px 0px #111;
+    }
+
+    .hero-image {
+      width: 100%;
+      display: block;
+      margin-top: 40px;
+    }
+
+    /* Responsivo */
+    @media (max-width: 900px) {
+      .hero {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        padding: 40px 5%;
+      }
+      .hero-text h1 {
+        font-size: 2.2rem;
+      }
+      .stats {
+        justify-content: center;
+      }
+    }
