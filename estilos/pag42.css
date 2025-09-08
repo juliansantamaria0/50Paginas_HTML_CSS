@@ -1,0 +1,278 @@
+:root {
+            --primary-text-color: #333;
+            --secondary-text-color: #666;
+            --button-bg: #333;
+            --button-text: #fff;
+            --box-light-blue: #E0F2F7;
+            --box-light-orange: #FDF0E1;
+            --box-light-pink: #F8E0E5;
+            --white-bg: #fff;
+            --border-radius-main: 15px;
+            --border-radius-small: 8px;
+            --font-poppins: 'Poppins', sans-serif;
+        }
+
+        body {
+            font-family: var(--font-poppins);
+            margin: 0;
+            padding: 20px;
+            background-color: #f0f2f5; /* Un fondo ligeramente gris para el layout */
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh;
+            box-sizing: border-box;
+        }
+
+        .container {
+            display: flex;
+            background-color: var(--white-bg);
+            border-radius: var(--border-radius-main);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+            max-width: 1200px;
+            width: 100%;
+            padding: 40px;
+            box-sizing: border-box;
+            gap: 40px;
+        }
+
+        .left-content {
+            flex: 2;
+            padding-right: 40px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .header {
+            display: flex;
+            align-items: center;
+            color: var(--secondary-text-color);
+            font-size: 0.9em;
+            margin-bottom: 20px;
+        }
+
+        .header svg {
+            margin-right: 8px;
+        }
+
+        h1 {
+            font-size: 3.2em;
+            color: var(--primary-text-color);
+            line-height: 1.1;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+
+        .description {
+            color: var(--secondary-text-color);
+            line-height: 1.6;
+            margin-bottom: 30px;
+            font-size: 1em;
+            max-width: 450px;
+        }
+
+        .button {
+            background-color: var(--button-bg);
+            color: var(--button-text);
+            padding: 15px 30px;
+            border: none;
+            border-radius: var(--border-radius-small);
+            font-size: 1.1em;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            max-width: fit-content;
+        }
+
+        .button:hover {
+            background-color: #555;
+        }
+
+        .stats-grid {
+            display: flex;
+            gap: 40px;
+            margin-top: 50px;
+            flex-wrap: wrap; /* Permite que los elementos se envuelvan en pantallas más pequeñas */
+        }
+
+        .stat-box {
+            background-color: var(--white-bg); /* Por defecto, se cambiará con vars */
+            border-radius: var(--border-radius-main);
+            padding: 20px;
+            flex: 2;
+            min-width: 180px; /* Asegura que no se hagan demasiado pequeños */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        }
+
+        .stat-box.blue { background-color: var(--box-light-blue); }
+        .stat-box.orange { background-color: var(--box-light-orange); }
+        .stat-box.pink { background-color: var(--box-light-pink); }
+
+        .stat-box .number {
+            font-size: 1.8em;
+            font-weight: 600;
+            color: var(--primary-text-color);
+            margin-bottom: 5px;
+        }
+
+        .stat-box .label {
+            font-size: 0.9em;
+            color: var(--secondary-text-color);
+            line-height: 1.4;
+        }
+
+        .imagen_principal {
+            flex: 1;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .testimonial-bubble {
+            position: absolute;
+            background-color: rgba(255, 253, 253, 0.705);
+            border-radius: 10px;
+            padding: 5px;
+            display: flex;
+            align-items: flex-start;
+            max-width: 220px;
+            font-size: 1em;
+            color: var(--secondary-text-color);
+           
+        }
+
+        .testimonial-bubble img {
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-right: 10px;
+            flex-shrink: 0;
+            border: 2px solid #0f0f0f;
+        }
+
+        .bubble-bottom-left {
+            bottom: 53%;
+            left: 8%;
+            transform: translateX(-70%); /* Ajuste para centrar en el borde */
+        }
+
+        .bubble-top-right {
+            top: 20%;
+            right: 15%;
+            transform: translateX(50%); /* Ajuste para centrar en el borde */
+        }
+
+        .bubble-bottom-right {
+            bottom: 20%;
+            right: 5%;
+            transform: translateX(50%); /* Ajuste para centrar en el borde */
+        }
+
+
+        .right-images {
+            flex: 0.8;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            align-items: center;
+        }
+
+        .right-images img {
+            width: 100%;
+            max-width: 180px;
+            height: 220px;
+            object-fit: cover;
+            border-radius: 20px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 1024px) {
+            .container {
+                flex-direction: column;
+                padding: 30px;
+                gap: 30px;
+            }
+
+            .left-content {
+                padding-right: 0;
+            }
+
+            h1 {
+                font-size: 2.5em;
+            }
+
+            .main-image-section {
+                order: -1; /* Mueve la imagen principal arriba en móvil */
+                height: 400px; /* Ajusta la altura */
+                margin-bottom: 30px;
+            }
+
+            .main-image-wrapper {
+                height: 400px;
+                max-width: 100%;
+            }
+
+            .right-images {
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .right-images img {
+                width: calc(33% - 20px);
+                max-width: 150px;
+                height: 120px;
+            }
+
+            .stats-grid {
+                justify-content: center;
+            }
+
+            .stat-box {
+                min-width: unset;
+                width: calc(50% - 20px);
+            }
+
+            .bubble-top-left, .bubble-bottom-left, .bubble-top-right, .bubble-bottom-right {
+                position: static; /* Eliminar posicionamiento absoluto en móvil */
+                transform: none;
+                margin-bottom: 15px; /* Espacio entre burbujas */
+            }
+
+            .image-section .testimonial-bubble {
+                display: none; /* Ocultar burbujas de testimonio en pantallas pequeñas si interfieren */
+            }
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2em;
+            }
+
+            .description {
+                font-size: 0.9em;
+            }
+
+            .explore-button {
+                padding: 12px 25px;
+                font-size: 1em;
+            }
+
+            .stat-box {
+                width: 100%;
+            }
+
+            .right-images img {
+                width: calc(50% - 20px);
+                height: 100px;
+            }
+
+        }
