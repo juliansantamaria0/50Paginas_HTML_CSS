@@ -1,0 +1,132 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Georgia', serif;
+}
+
+body {
+  background: linear-gradient(to right, #f5f5f5 50%, #000 50%);
+  color: #fff;
+  line-height: 1.6;
+  min-height: 100vh;
+}
+
+/* Layout principal */
+.coffee-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  padding: 3rem 4rem;
+  max-width: 1400px;
+  margin: auto;
+  gap: 2rem;
+}
+
+/* Texto izquierda */
+.coffee-text h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #111; 
+}
+
+.coffee-text p {
+  margin: 1rem 0 2rem;
+  color: #333;
+  font-size: 1rem;
+  max-width: 350px;
+}
+
+.btn {
+  background: #111;
+  color: #fff;
+  border: none;
+  padding: 0.8rem 1.8rem;
+  border-radius: 30px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.btn:hover {
+  background: #333;
+}
+
+/* Imagen central */
+.coffee-main img {
+  width: 100%;
+  max-width: 350px;
+  border-radius: 50%;
+  display: block;
+  margin: auto;
+  box-shadow: 0 0 20px rgba(0,0,0,0.4);
+  z-index: 2;
+}
+
+/* Stats derecha */
+.coffee-stats {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.stat-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.stat-card h3 {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #fff; 
+}
+
+.stat-card img {
+  width: 100%;
+  border-radius: 12px;
+}
+
+.stat-card p {
+  font-size: 0.85rem;
+  color: #ddd;
+}
+
+/* Responsivo */
+@media (max-width: 1000px) {
+  body {
+    background: #000;
+  }
+
+  .coffee-section {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .coffee-text h1 {
+    color: #fff; 
+  }
+
+  .coffee-text p {
+    color: #eee;
+    margin: auto;
+    max-width: 90%;
+  }
+
+  .coffee-main img {
+    margin: 2rem auto;
+  }
+
+  .coffee-stats {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+  }
+
+  .stat-card {
+    max-width: 220px;
+    text-align: center;
+  }
+}
