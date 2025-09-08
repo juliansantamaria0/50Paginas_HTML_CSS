@@ -1,0 +1,110 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Georgia', serif;
+}
+
+body {
+  background: #fff;
+  color: #222;
+  line-height: 1.5;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 2rem;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Intro izquierda */
+.intro {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+
+
+.intro h1 {
+  font-size: 2.8rem;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.intro-card {
+  background: #f8f8f8;
+  border-radius: 12px;
+  padding: 1rem;
+}
+
+.intro-card img {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 0.8rem;
+}
+
+.intro-card p {
+  font-size: 0.9rem;
+  color: #444;
+}
+
+/* Cards derecha */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 12px;
+}
+
+.tag {
+  font-size: 0.9rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.card-content {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+}
+
+.number {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #777;
+}
+
+.card-content p {
+  font-size: 0.9rem;
+  color: #444;
+}
+
+/* Responsivo */
+@media (max-width: 900px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+
+  .intro h1 {
+    font-size: 2rem;
+  }
+
+  .card-content {
+    flex-direction: column;
+  }
+}

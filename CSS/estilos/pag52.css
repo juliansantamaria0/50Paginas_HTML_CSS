@@ -1,0 +1,161 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #fff;
+  color: #111;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 100vh;
+}
+
+/* Columna izquierda */
+.left {
+  flex: 1 1 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f8f8f8;
+}
+
+.main-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Columna derecha */
+.right {
+  flex: 1 1 50%;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.right h1 {
+  font-size: 3rem;
+  margin-bottom: 40px;
+}
+
+.right h1 span {
+  -webkit-text-stroke: 1px #000;
+  color: transparent;
+  font-weight: bold;
+}
+
+/* Stats */
+.stats-container {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  margin-bottom: 30px;
+}
+
+/* Círculo con texto y corazón */
+.circle {
+  position: relative;
+  width: 120px;
+  height: 120px;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.circle-text {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  animation: rotate 12s linear infinite;
+  font-size: 0.75rem;
+  text-align: center;
+}
+
+.circle-text span {
+  display: inline-block;
+  white-space: nowrap;
+  transform: rotate(0deg);
+}
+
+.heart {
+  font-size: 1.5rem;
+  position: relative;
+}
+
+/* Stats textos */
+.stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  flex: 1;
+}
+
+.stats h2 {
+  font-size: 1.5rem;
+  margin-bottom: 5px;
+}
+
+.stats p {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+/* Texto y botón */
+.description {
+  margin: 20px 0;
+  line-height: 1.6;
+  max-width: 600px;
+}
+
+.btn {
+  padding: 12px 30px;
+  background: #111;
+  color: #fff;
+  border: none;
+  border-radius: 25px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+/* Galería */
+.gallery {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.gallery img {
+  width: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+/* Animación del círculo */
+@keyframes rotate {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Responsivo */
+@media (max-width: 900px) {
+  .container {
+    flex-direction: column;
+  }
+  .left, .right {
+    flex: 1 1 100%;
+    min-height: 50vh;
+  }
+  .stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

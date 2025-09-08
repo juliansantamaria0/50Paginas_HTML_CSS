@@ -1,0 +1,71 @@
+/* Animación que cambia el fondo del body en diferentes colores */
+@keyframes cambiarFondo {
+  0% {
+    background-color: #aca7a7;
+  }
+  25% {
+    background-color: #0c0c0cad;
+  }
+  50% {
+    background-color: rgba(56, 57, 58, 0.678);
+  }
+  100% {
+    background-color: rgba(126, 128, 126, 0.658);
+  }
+}
+
+/* Estilos generales del body */
+body {
+  padding: 5%; /* Espaciado interno */
+  box-sizing: border-box; /* Incluye padding y border en el tamaño total */
+  font-family: Arial, sans-serif; /* Fuente del texto */
+  height: 100vh; /* Alto de la pantalla completa */
+  margin: 0; 
+  color: #333;
+  animation-name: cambiarFondo; /* Nombre de la animación aplicada */
+  animation-duration: 5s; /* Duración de cada ciclo */
+  animation-iteration-count: infinite; /* Se repite infinitamente */
+  animation-timing-function: ease-in-out; /* Transición suave */
+  overflow-x: hidden; /* Oculta el scroll horizontal */
+}
+
+
+header {
+  background: #2b2a2a96;
+  color: white;
+  padding: 1rem;
+}
+
+header h1 {
+  margin: 0;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 1rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+.intro {
+  padding: 2rem;
+  text-align: center;
+}
+
+footer {
+  background: #7977776b;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}

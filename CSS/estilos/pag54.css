@@ -1,0 +1,129 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Georgia', serif;
+}
+
+body {
+  background: linear-gradient(to bottom right, #fdf3c5, #f54939e7);
+  color: #222;
+  line-height: 1.6;
+}
+
+/* Contenedor */
+.hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  padding: 3rem 5rem;
+  max-width: 1300px;
+  margin: auto;
+  gap: 3rem;
+}
+
+/* Caja izquierda */
+.info-box {
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  padding: 2rem 1.5rem;
+  background: rgba(255, 255, 255, 0.7);
+  position: relative;
+}
+
+.circle-text {
+  position: absolute;
+  top: -55px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  font-size: 0.8rem;
+  color: #333;
+}
+
+.circle-heart {
+  font-size: 1rem;
+  margin-top: 0.3rem;
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 1.5rem;
+  gap: 1rem;
+}
+
+.stat h3 {
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.stat p {
+  font-size: 0.85rem;
+  color: #444;
+}
+
+/* Caja derecha */
+.text-box h1 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.text-box p {
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+  color: #333;
+}
+
+.btn {
+  background: #111;
+  color: #fff;
+  border: none;
+  padding: 0.8rem 1.8rem;
+  border-radius: 30px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.btn:hover {
+  background: #333;
+}
+
+
+.hero-image {
+  margin-top: 3rem;
+}
+
+.hero-image img {
+  width: 100%;
+  border-radius: 0 0 30px 30px; 
+  display: block;
+  border: none;
+  outline: none;
+  object-fit: cover;
+}
+
+/* Responsivo */
+@media (max-width: 950px) {
+  .hero {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .circle-text {
+    position: static;
+    transform: none;
+    margin-bottom: 1rem;
+  }
+
+  .stats {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-image img {
+    border-radius: 20px;
+  }
+}

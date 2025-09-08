@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Georgia", serif;
+  background: #000;
+  color: white;
+}
+
+/* HERO SECTION */
+.hero-space {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px 10%;
+  position: relative;
+}
+
+.hero-left {
+  max-width: 500px;
+  position: relative; /* para colocar el sol */
+}
+
+.hero-left h1 {
+  font-size: 55px;
+  line-height: 1.2;
+  position: relative;
+  z-index: 1;
+}
+
+.hero-left h1 span {
+  color: #f5cb36; /* Amarillo del sol */
+  font-weight: bold;
+}
+
+.hero-left p {
+  margin: 20px 0;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #ddd;
+}
+
+.btn {
+  border: none;
+  padding: 15px 35px;
+  border-radius: 30px;
+  font-size: 18px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.btn-light {
+  background: white;
+  color: black;
+}
+
+.btn-light:hover {
+  background: #f0f0f0;
+}
+
+/* SOL */
+.sun {
+  position: absolute;
+  top: 10px;
+  left: -80px;
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  background: radial-gradient(circle, #FFD74B 40%, #ffa601 100%);
+  filter: blur(5px);
+  z-index: 0;
+}
+
+/* HERO IMAGE */
+.hero-right {
+  position: relative;
+}
+
+.hero-right img {
+  max-width: 500px;
+}
+
+.stats {
+  position: absolute;
+  color: white;
+  font-size: 26px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.stats span {
+  display: block;
+  font-size: 14px;
+  font-weight: normal;
+  margin-top: 5px;
+}
+
+.top-right {
+  top: 40px;
+  right: -40px;
+}
+
+.bottom-center {
+  bottom: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* CARDS */
+.cards.dark {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 50px 10%;
+  background: #000;
+}
+
+.card {
+  background: #1c1c1c;
+  padding: 25px;
+  border-radius: 15px;
+  flex: 1;
+  text-align: center;
+  max-width: 220px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+  color: #ccc;
+}
+
+.card .icon {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.card h3 {
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+}
