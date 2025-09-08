@@ -226,13 +226,3 @@ Proporcionar ejemplos prácticos y referencias visuales para desarrolladores que
 - [A List Apart](https://alistapart.com/) - Estándares web
 
 ```
-
-<div align="center">
-
-
-
-*Desarrollado por Julian Santamaria y Kevin Pico*
-
-**© 2025 J3 - Taller de Desarrollo Web**
-
-</div>
