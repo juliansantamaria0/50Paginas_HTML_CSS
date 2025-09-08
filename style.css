@@ -1,71 +1,108 @@
-/* Animación que cambia el fondo del body en diferentes colores */
+:root {
+  --color-bg-start: #aca7a7;
+  --color-bg-mid1: #0c0c0cad;
+  --color-bg-mid2: rgba(56, 57, 58, 0.678);
+  --color-bg-end: rgba(126, 128, 126, 0.658);
+  --color-header-bg: #2b2a2a96;
+  --color-footer-bg: #7977776b;
+  --color-text: #333;
+  --color-link: #ffffff;
+  --color-link-hover: #ffd700;
+}
+
+
 @keyframes cambiarFondo {
   0% {
-    background-color: #aca7a7;
+    background-color: var(--color-bg-start);
   }
   25% {
-    background-color: #0c0c0cad;
+    background-color: var(--color-bg-mid1);
   }
   50% {
-    background-color: rgba(56, 57, 58, 0.678);
+    background-color: var(--color-bg-mid2);
+  }
+  75% {
+    background-color: #4a4a4a8a;
   }
   100% {
-    background-color: rgba(126, 128, 126, 0.658);
+    background-color: var(--color-bg-end);
   }
 }
 
-/* Estilos generales del body */
+
 body {
-  padding: 5%; /* Espaciado interno */
-  box-sizing: border-box; /* Incluye padding y border en el tamaño total */
-  font-family: Arial, sans-serif; /* Fuente del texto */
-  height: 100vh; /* Alto de la pantalla completa */
-  margin: 0; 
-  color: #333;
-  animation-name: cambiarFondo; /* Nombre de la animación aplicada */
-  animation-duration: 5s; /* Duración de cada ciclo */
-  animation-iteration-count: infinite; /* Se repite infinitamente */
-  animation-timing-function: ease-in-out; /* Transición suave */
-  overflow-x: hidden; /* Oculta el scroll horizontal */
+  padding: 5%;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+  height: 100vh;
+  margin: 0;
+  color: var(--color-text);
+  animation: cambiarFondo 10s ease-in-out infinite;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
-
 header {
-  background: #2b2a2a96;
-  color: white;
+  background: var(--color-header-bg);
+  color: var(--color-link);
   padding: 1rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
 header h1 {
-  margin: 0;
+  margin: 0 0 0.5rem 0;
+  font-size: 2rem;
 }
 
 nav ul {
   list-style: none;
   padding: 0;
+  margin: 0;
   display: flex;
+  flex-wrap: wrap;
   gap: 1rem;
 }
 
 nav a {
-  color: white;
+  color: var(--color-link);
   text-decoration: none;
   font-weight: bold;
+  padding: 0.3rem 0.5rem;
+  border-radius: 4px;
+  transition: background-color 0.3s, color 0.3s;
 }
 
-nav a:hover {
+nav a:hover,
+nav a:focus {
   text-decoration: underline;
+  background-color: var(--color-link-hover);
+  color: #000;
+  outline: none;
 }
 
 .intro {
   padding: 2rem;
   text-align: center;
+  flex-grow: 1;
 }
 
 footer {
-  background: #7977776b;
-  color: white;
+  background: var(--color-footer-bg);
+  color: var(--color-link);
   text-align: center;
   padding: 1rem;
-  margin-top: 2rem;
+  margin-top: auto;
+  font-size: 0.9rem;
+}
+
+
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
 }
